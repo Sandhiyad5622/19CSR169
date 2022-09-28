@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login.com</title>
+</head>
+<style>
+.main{
+}
+.main ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+.main li {
+  float: left;
+}
+
+.main li a {
+  display: block;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.main li a:hover:not(.active) {
+  background-color:grey;
+}
+
+.active {
+  background-color:indianred;
+  color: white;
+}
+.header{
+    width:100% ;
+    height: 120px;
+	background-color:white;
+    background-image: url("https://scholarships.gov.in/img/logo.jpg"),url("https://i.dlpng.com/static/png/1413639-graduation-png-image-background-graduation-png-1024_742_preview.png"),url("https://uxdt.nic.in/wp-content/uploads/2020/06/Digital-india-White.jpg");
+    background-repeat: no-repeat;
+    background-size:35% 50%,40% 80%,20% 50%;
+    background-position:25px 30px,510px 30px,1050px 30px ;
+}
+.nav{
+	width:100%;
+	height:30px;
+	background-color:black;
+    padding-top: 10px;
+    text-align: center;
+	}
+	.nav a{
+            text-decoration: none;
+            color: white;
+            margin-right: 80px;
+            font-weight: bold;
+			font-size:16px;
+            font-family: cosmic sans-serif;
+            text-align: center;
+			}
+	.dropbutton {
+        background-color:black;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: cosmic sans-serif;
+        border: none;
+        text-decoration: none;
+    }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:lightgreen ;
+        width: 100px;
+		margin-left:30px;
+      }
+     .dropdown-content a {
+        color: black;
+        padding:8px 8px;
+        text-decoration: none;
+        display: block;
+      }
+       .dropdown-content a:hover {background-color:red;
+	   padding:8px; width:82px}
+      .dropdown:hover .dropdown-content {
+	  display: block;}
+       .dropdown:hover .dropbutton {background-color: black;
+	   } 
+	fieldset{
+	margin:20px;
+background-color:#20B2AA;
+border-radius: 20px;
+ margin-left: 650px;
+ max-width:500px;
+ border:2px solid black;
+ margin-top:-340px;
+ }
+ legend{
+ text-align:center;
+ font-size:18px;
+ border:1px solid#000;
+background-color:#B8860B;
+padding:2px 5px;
+top:-10px;
+font-family: sans-serif;
+font-weight: bold;
+}
+.row{
+margin-left:20px;
+background-color:lightgrey;
+height:325px;
+width:25%;
+border:2px solid black;
+border-radius:6px;
+}
+.footer{
+  height: 100px;
+    width: 100%;
+    background-color:black;
+    clear:both;
+	border-radius:10px;
+	margin-left:10px;
+    text-align: center;
+    }
+    ul{
+        margin: 0;
+        padding:0;
+        list-style-type: none;
+    }
+    li a{
+        padding: 8px 16px;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        color: white;
+    }
+</style>
+<body>
+<div class="main">
+<ul>
+    <li style="float:left;margin-left:40px"><a class="active" href="#">SCHOLARSHIP</a></li>
+    <li style="float:right;margin-right:100px"><a href="#">For Academic Year 2021-22 | Home | A- A A+ </a></li>
+  </ul></div>
+   <div class="header">
+   </div>
+   <div class="nav">
+   <a href="Register.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+            <a href="About.html">About us</a>
+            <a href="Contact.html">contact</a>
+			 <div class="dropdown">
+                <button class="dropbutton"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+                <div class="dropdown-content">
+                  <a href="Register.html">Register</a>
+                  <a href="Login.html">Renewal</a>
+				  <a href="signup.html">Sign Up</a>
+				  </div>
+   </div>
+   </div>
+   <br><br><br><br><br><br>
+ <div class="row">
+    <div class="col-md-4" style="height:40px;text-align:center;font-size:16px;background-color:#008B8B">
+	 Instructions<br>(Fields marked with * are Mandatory fields)</div>
+<marquee width="75%" direction="up" height="250px" >
+    <p style="margin-left:50px;color:green;font-size:17px">Date 0f Birth*-provide DOB as printed certificate</p>
+	 <p style="margin-left:50px;color:red;font-size:17px">State of Domicile*-Students must have their permanent address</p>
+	 <p style="margin-left:50px;color:green;font-size:17px">Name*-Provide name as per in aadhar</p>
+	 <p style="margin-left:50px;color:red;font-size:17px">Mobile Number*-Provide authenticated number</p>
+	  <p style="margin-left:50px;color:green;font-size:17px">E-mail-Provide Correct email id</p>
+	  <p style="margin-left:50px;color:red;font-size:17px">Bank Details-Provide active account number</p>
+	 <p style="margin-left:50px;color:green;font-size:17px">Identifaction details-Aadhar must</p>
+</marquee>
+</div></div>
+<form action="Register.html"> 
+<fieldset> 
+ <legend>Login</legend>
+ <table align="center" cellpadding="10">
+ <tr>
+<td style="color:red ;font-size:18px">Application Id*</td>
+<td>
+<input type="number" name="Mobile_Number" pattern="[0-9]"  required/>
+</td></tr>
+<tr>
+<td style="color:red;font-size:18px">Email*</td>
+<td><input type="email" name="Email_Id" maxlength="30"  required/></td>
+</tr>
+<tr>
+<td style="color:red;font-size:18px">Password*</td>
+<td><input type="password" name="psw"  maxlength="8" required/></td>
+</tr>
+<tr>
+<td style="color:red ;font-size:18px">Mobile Number*</td>
+<td>
+<input type="number" name="Mobile_Number" pattern="[0-9]"  maxlength="10"required/>
+</td></tr>
+<tr>
+<tr>
+<td>
+<input type="submit" value="Login"readonly style="width:80px;text-align:center;background-color:green;font-size:16px;border-radius:5px"></a>
+<input type="reset" value="Reset" style="background-color:green;font-size:16px;border-radius:5px;width:80px"><br></td>
+<tr>
+<td>
+<a href="forgot.html"><input type="text" value="Forgot password ?"readonly style="margin:10px;width:150px;background-color:yellow;font-size:16px;border-radius:5px">
+</td>
+</tr>
+ </form>
+ </table>
+ </fieldset>
+ <br><br>
+ <div class="footer">
+  <ul>
+      <li><a href="#">© Copyright 2016, National Scholarship Portal</a></li>
+      <li ><a href="#">Site Best Viewed In IE-6+, Mozilla Firefox, Chrome, Safari etc...</a></li>
+ </ul>
+</div>
+</body>
+</html>
